@@ -3,6 +3,7 @@
 class Main extends CI_Controller {
 	public function index()
 	{
-		print "Dashboard";
+		$this->template->set_directory('dash');
+		$this->template->display('login');
 	}
 }
